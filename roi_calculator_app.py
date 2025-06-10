@@ -89,8 +89,8 @@ col2.metric("Net profit (EUR)", f"{inc_profit - total_cost:,.0f}")
 col3.metric("Payback period", payback)
 
 with st.expander("See calculation details"):
-    st.write(f"**Incremental revenue (over {horizon} mo):** EUR{inc_rev:,.0f}")
-    st.write(f"""**Incremental profit (margin {margin}%):** EUR{inc_profit:,.0f}
-**Total service cost:** EUR{total_cost:,.0f}""")
+    st.write(f"**Incremental revenue (over {horizon} mo):** EUR {inc_rev:,.0f}")
+    st.write(f"""**Incremental profit (margin {margin}%):** EUR {inc_profit:,.0f}
+**Total service cost:** EUR {total_cost:,.0f}""")
 
 st.caption("Model assumes incremental revenue uplift applies evenly across the evaluation horizon.")
